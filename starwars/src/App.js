@@ -1,9 +1,11 @@
 import React, {useState, useEffect}  from 'react';
 import './App.css';
+//IMPORT ALL OF YOUR FILES AND DEPENDENCIES!!!!!!
 import axios from 'axios';
 import styled from 'styled-components'
 import Person from './components/person.js'
 
+//Styling container/wrapper.
 const AppWrapper = styled.div `
   display: flex;
   flex-direction: column;
@@ -11,12 +13,13 @@ const AppWrapper = styled.div `
   align-items: center;
   margin: 1.5%;
 `;
-
+//Styling Title
 const AppTitle = styled.h1 `
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 `;
 
+//Calling my props from my Person.js file
 const App = (props) => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
@@ -26,7 +29,7 @@ useEffect(() => {
   async function fetchData () {
     try {
       const personContainer = await axios.get(
-        "https://swapi.co/api/people"
+        "https://swapi.co/api/people"  // Pulling in People data here.
       );
       console.log(personContainer);
 
@@ -44,6 +47,7 @@ useEffect(() => {
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
 
+//displaying the data onto the cards
   return (
     <AppWrapper>
     <AppTitle>React Wars</AppTitle>

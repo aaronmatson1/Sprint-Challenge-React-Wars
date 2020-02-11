@@ -11,11 +11,12 @@ const PersonWrapper = styled.div `
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px #0000003d;
 `;
 
+//Get Rid of UL styles
 const PersonList = styled.ul `
     list-style: none;
 `;
 
-
+//Setting up my props for the components here
 export default function Person(props) {
     return (
         <PersonWrapper>
