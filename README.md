@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React is a JavaScript library for building user interfaces. The main problem solved by react is the development of large applications that have temporal data changes.
+
 - [ ] What does it mean to _think_ in react?
+
+It means to think in componenets and componenet hierarchies.
 
 - [ ] Describe state.
 
+“state” is an object that represents the parts of the app that can change.
+
 - [ ] Describe props.
 
+In a React component, props are variables passed to it by its parent component.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+Side effects are basically anything that affects something outside of the scope of the current function that's being executed. You can sync effects in React to state or prop changes by using the useState and useEffect hooks at the beginning of your app.js document.
 
 ## Project Set Up
 
@@ -60,7 +70,7 @@ Follow these steps for completing your project:
 
 Your finished project must include all of the following requirements:
 
-- [ ] Fetch a list of Star Wars characters from the [Star Wars API (or SWAPI)](https://swapi.co/) and render them to the screen. 
+- [ ] Fetch a list of Star Wars characters from the [Star Wars API (or SWAPI)](https://swapi.co/) and render them to the screen.
 - [ ] Follow the documentation to learn how to fetch a list of "people". However, don't spend _too_ long on this. Here is a link for you to follow if you've looked around the docs for about 15 minutes or so and haven't found where to go - [Secret Link to Awesomeness 🤫](https://swapi.co/documentation#people).
 - [ ] Set the data you fetch to state.
 - [ ] Map over the list and render a component for each character on the page.
@@ -79,7 +89,7 @@ Your finished project must include all of the following requirements:
 It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) than one that attempts too much and fails.
 
 ## Stretch Problems
-- [ ] Next week we will be looking at React forms. Look a head and try to create a search form that will filter through the data displayed from your characters. 
+- [ ] Next week we will be looking at React forms. Look a head and try to create a search form that will filter through the data displayed from your characters.
 
 - [ ] Build a pagination system that will allow you to load the next page of data.
   - `console.log()` the data coming back from the server.
